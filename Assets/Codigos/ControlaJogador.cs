@@ -21,9 +21,9 @@ public class ControlaJogador : MonoBehaviour {
 		corpoJogador = GetComponent<Rigidbody2D> ();
 
 		//colocando possicao do texto
-		textScrore.transform.position = new Vector2 (Screen.width/2 , Screen.height-200);
-		textScrore.text = "Toque para iniciar";
-		textScrore.fontSize = 26;
+		textScrore.transform.position = new Vector2 (Screen.width - 50, Screen.height-200);
+		textScrore.text = "Iniciar";
+		textScrore.fontSize = 36;
 	}
 
 	void Update () {
@@ -39,7 +39,7 @@ public class ControlaJogador : MonoBehaviour {
 					//colocando possicao do texto
 					textScrore.transform.position = new Vector2 (Screen.width, Screen.height-70);
 					textScrore.text = pontuacao.ToString();
-					textScrore.fontSize = 26;
+					textScrore.fontSize = 46;
 				}
 
 				corpoJogador.velocity = new Vector2 (0, 0);
